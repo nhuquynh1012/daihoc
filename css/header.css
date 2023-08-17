@@ -1,0 +1,164 @@
+.nhder{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav{
+    background-color:#1d559f;
+    width: 100%;
+    padding: 0px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex{
+    display: flex;
+}
+.repeatnone{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+ul.navs>li.searchs{
+    padding-top: 1.474rem;
+}
+.between{
+    justify-content: space-between;
+}
+/* phần tìm kiếm */
+.search-box{
+    background: #fff;  
+    border-radius: 30px;
+}
+.search-text{
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 12px;
+    width: 0;
+    padding: 0;
+    transition: all 0.25s ease-in-out;
+}
+.search-box:hover>.search-text,.search-box>.search-text:valid{
+    padding: 10px 0px 10px 15px;
+    width: 150px;
+}
+form.search-box>button.search-btn{
+    border: none;
+    background-color: #fff;
+    padding: 0.8em 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 0.8em;
+}
+/* hết phần tìm kiếm */
+/* trang chủ */
+li.home{
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+li.home>:hover{
+  color: rgb(184, 243, 247);
+}
+ul.navs>li>a{
+    display: block;
+    padding: 1.75rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+/* phần header */
+header{
+    background-color:#132d64;
+    width: 100%;
+    padding: 0px;
+}
+ul.menus{
+    justify-content: center;
+    display: flex !important;
+    flex-basis: auto;
+    width: 100%;
+}
+ul.menus>li>a{
+    display: block;
+    padding: 10px;
+    color: aliceblue;
+    list-style-type: none;
+    font-size: 20px;
+    text-decoration: none;
+} 
+ul.menus>li{
+  position: relative;
+  justify-content: space-around;
+
+}
+div.Menu li a {
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0px;
+    display: flex;
+}
+ul.sub-menu{
+    position: absolute;
+    background-color:#132d64;
+    list-style: none;
+    padding: 15px 25px;            
+    /* chỉnh kích thước bảng */
+    width: 250px;
+    display: none;
+}
+ul.menus li:hover ul.sub-menu{
+    display: block;
+}
+ul.sub-menu>li>a{
+    margin: 5px 4px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+ul.sub-menu>li{
+    padding: 10px 0px;
+    
+}
+ul.sub-menu>li:hover>a{
+    color: rgb(47, 238, 255);
+}
+ul.sub-menu li:last-child a{
+    border: none;
+}
+/* thiết lập khi hover menu  */
+ul.menus>li>a{
+    position: relative;
+}
+ul.menus>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px; 
+    background-color: rgb(47, 238, 255);   
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+   transition:0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+ul.menus>li:hover>a::before{
+    display: block;
+    width: 100%;
+
+}
+/* thiết lập khi hover vào phần has-child */
+.menus>li.has-child::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    color:whitesmoke ;
+    position: absolute;
+    top: 0px;
+    right: -6px;
+    padding: 15px 0px;
+}
+
+

@@ -1,0 +1,217 @@
+
+/* CSS BANNER */
+.mainbody{
+  margin-top: 0px;
+  width: 100%;
+}
+div.banner{
+  padding-top: 100px;
+}
+div.banner img{
+  width: 100%;
+  height:500px ;
+}
+section.subject {
+    background-color: #1d559f;
+    padding: 20px;
+}
+section.subject h1 {
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 5px #132d64;
+    animation: doimauchu ease-in-out .5s infinite;
+}
+@keyframes doimauchu{
+  form{
+    color: #66CCFF;
+  }
+  to{
+    color: #97FFFF;
+  }
+}
+
+/* CSS INTRODUCTION 2*/
+section.introduction {
+    background-color: whitesmoke;
+    color: #1d559f;
+    text-align: center;
+    padding: 15px 10%;
+}
+
+section.introduction2 {
+    background-color: whitesmoke;
+}
+section.introduction2>h2.underline{
+  text-align: center;
+  color: #a21212;
+}
+section.introduction  p {
+    margin-top: 50px;
+} 
+
+h2.underline::after {
+    content: " ";
+    height: 5px;
+    width: 5%;
+    background-color: #132d64;
+    display: block;
+    margin: 10px auto;
+} 
+
+  div.items {
+    display: flex;
+    background-color: whitesmoke;
+  }
+  div.item {
+    width: 25%;
+    padding: 0% 2%;
+  } 
+
+  div.item > div {
+    background-color: white;
+    padding: 20px;
+  } 
+  div.item h4{
+    text-align: center;
+    color: #1d559f;
+  }
+  div.item img {
+    max-width: 100%;
+    transition: transform ease-in 0.2s;
+  } 
+  div.item img:hover{
+    transform: scale(1.025);
+  }
+
+  /* CSS PRODUCT */
+  section.product {
+    background-color: whitesmoke;
+    color: #1d559f;
+    text-align: center;
+  }
+  section.product h2{
+    padding-top: 30px;
+  }
+
+  div.prods {
+    display: flex;
+    flex-wrap: wrap;
+  } 
+div a img{
+  width: 20%;
+}
+/* CSS INFOMATION  */
+div.Information {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  line-height: 200%;
+  background-color: whitesmoke;
+}
+ul.Informations li{
+  list-style-type: none;
+  padding: 10px 30px;
+}
+
+ul.Informations li > i {
+  font-size: 4rem;
+}
+.fa-handshake {
+  color: #132d64;
+}
+.fa-calendar-check {
+  color: #132d64;
+}
+.fa-bag-shopping {
+  color: #132d64;
+}
+
+
+  /* CSS STATSS */
+  section.statss>div.starts {
+    color: black;
+    display: flex;
+    text-align: center;
+  }
+  section.statss{
+    background-color: whitesmoke;
+  }
+
+  section.statss h1 {
+    margin-bottom: 5px;
+    color: #132d64;
+    margin-top: 15px;
+  }
+  section.statss h2.underline{
+    text-align: center;
+    color: #a21212;
+    padding-top: 30px;
+   
+  }
+  div.stat1{
+    width: 25%;
+    background-color: #dddbdb;
+  }
+  div.stat {
+    width: 25%;
+    background-color: #eaeaea;
+  }
+
+  /* CSS EVENTS */
+  div.events {
+    background-color: whitesmoke;
+    color: #1d559f;
+    text-align: center;
+    height: 100hv;
+    border: 1px solid black;
+  }
+  div.events h2{
+    padding-top: 30px;
+  }
+  .container{
+    width: 60%;
+    height: 80%;
+    margin: 50px auto;
+  }
+  .mainimg{
+    height: 40%;
+    margin-bottom: 20px;
+    position: relative;
+
+  }
+  .list-image{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+  }
+  .list-image div{
+    flex: 1;
+    padding: 5px;
+  }
+  .list-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+  }
+  .control{
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translateY(-50%);
+  }
+  .prev{
+    left: 35px;
+  }
+  .next{
+    right: 35px;
+  }
+  .active{
+    background: rgb(228, 111, 111);
+  }
+  
